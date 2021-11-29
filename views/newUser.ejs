@@ -1,0 +1,32 @@
+<%- include('partials/header')%>
+<%- include('partials/navbar')%>
+<style>
+    body{
+        background-image: url('../img/edit.jpg');
+        background-size: cover;
+    }
+</style>
+<body>
+    <hr>
+    <div class="container">
+        <div class="card bg-dark text-white">
+            <div class="card-header">
+                <h3>Criar Usuário</h3>
+                <div style="width: 100%; border: 1px solid #fff;"></div>
+            </div>
+            <div class="card-body">
+                <form action="/new-user" method="post">
+                    <input class="form-control" type="text" name="name" id="name" placeholder="nome"><br>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="e-mail"><br>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="senha"><br>
+                    <div style="display:flex; justify-content: space-between;">
+                        <button class="btn btn-light">Criar</button>
+                        <a href="/users" class="btn btn-light" style="text-align: center;">Voltar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

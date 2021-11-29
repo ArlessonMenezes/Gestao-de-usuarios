@@ -1,0 +1,34 @@
+<%- include('partials/header')%>
+<%- include('partials/navbarAdmin')%>
+<style>
+    body{
+        background-image: url('/img/admin.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <hr>
+    
+    <div class="card mb-3 bg-dark text-white text-center" style="max-width: 500px; margin: 20px auto">
+        <a style="text-decoration: none;" href="/users">
+            <div class="row g-0 justify-content-center">
+            <div class="col-md-5">
+                <img src="/img/usuario.png" class="img-fluid rounded-start" alt="usuário">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body text-white">
+                <h5 class="card-title">Usuários</h5>
+                <div style="width: 100%; border: 1px solid #fff"></div><br>
+                <p style="color: rgb(185, 184, 184);" class="card-text">
+                    - Vizualizar lista de usuários, criar novo usuário, editar e excluir seus dados
+                </p>
+                </div>
+            </div>
+            </div>
+        </a>
+      </div>
+      
+      <hr>
+</body>
+</html>

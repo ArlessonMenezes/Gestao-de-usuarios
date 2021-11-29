@@ -1,0 +1,55 @@
+<%- include('partials/header')%>
+<nav  class="navbar navbar-expand navbar-dark bg-dark text-white">
+    <a href="/">
+        <i style="color: #fff; font-size: 20px;" class="bi bi-clipboard-data"></i>
+        <label style="cursor: pointer; border-bottom: 1px solid #fff ;margin-left: 5px; color: #fff;" ><h4>Gerenciador de Usuários</h4></label>
+    </a>
+</nav>
+<style>
+    body{
+        background-image: url('/img/login1.jpg');
+        background-size: cover;
+        background-color: rgb(250, 248, 248);
+    }
+</style>
+<body>
+    <hr>
+    <div class="container mr-3">
+        <div class="row">
+            <div class="col-5">
+                <div class="card bg-dark text-white pb-5">
+                    <div class="card-header">
+                        <h3>Login</h3>
+                        <div style="width: 100%; border: 1px solid #fff;"></div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <form action="/auth" method="post">
+                            <input class="form-control" type="email" name="emailLogin" id="email" placeholder="e-mail"><br>
+                            <input class="form-control" type="password" name="passwordLogin" id="password" placeholder="senha"><br>
+                            <button class="btn btn-light mb-3">Logar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 335px; border: 1px solid #999;"></div>
+            <div class="col-5">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">
+                        <h3>Cadastro</h3>
+                        <div style="width: 100%; border: 1px solid #fff;"></div>
+                    </div>
+                    <div class="card-body">
+                        <form action="/users" method="post">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="nome"><br>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="e-mail"><br>
+                            <input class="form-control" type="password" name="password" id="password" placeholder="senha"><br>
+                            <button class="btn btn-light">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>
